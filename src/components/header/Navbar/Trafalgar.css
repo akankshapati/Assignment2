@@ -1,0 +1,43 @@
+.trafalgar {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+.circle {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: #458FF6;
+    border-radius: 50%;
+}
+
+.text {
+    margin: auto;
+    color: #ffffff;
+}
+
+.n-name {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 10px;
+}
+
+/* for tab responsive */
+@media only screen and (min-width: 481px)and (max-width: 768px) {
+    .n-name {
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 20px;
+    }
+}
+
+/* for desktop responsive */
+@media only screen and (min-width: 769px) {
+    .n-name {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 30px;
+    }
+}

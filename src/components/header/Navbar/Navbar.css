@@ -1,0 +1,13 @@
+.navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.n-left{
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+
