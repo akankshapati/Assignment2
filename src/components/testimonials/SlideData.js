@@ -1,13 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const SlideData = () => {
   return (
-   <>
-   <article className='box d_flex'>
+    <>
+      <article className="box d_flex"></article>
+    </>
+  );
+};
 
-   </article>
-   </>
-  )
-}
-
-export default SlideData
+export default SlideData;

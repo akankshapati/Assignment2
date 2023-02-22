@@ -1,90 +1,153 @@
-.latest-Article{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.5rem;
+.article {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
-h2{
-    font-size: 27px;
-    font-weight: 500;
-    line-height: 36px;
+.article .bgFrame {
+  position: absolute;
+  transform: rotate(205deg);
+  right: 7.25rem;
+  top: 410.5rem;
 }
-.latest-card{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+.article .dots{
+  position: absolute;
+  left: 2rem;
+  top:440rem;
+  z-index: -2;
 }
-
-.latest-card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+.bgFrame img{
+  width: 100%;
 }
-.box-content{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-.box-content a img{
-    width: auto;
-}
-.box  h3{
-    font-size: 15px;
-    font-weight: 700;
-    margin: 2px;
-}
-.box p{
-    font-size: 10px;
-    color:#7D7987;
-    font-weight: 500;
-    margin: 2px;
-}
-.box img{
-    object-fit: fill;
-    border-radius: 20px 20px 0 0;
+h2 {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 36px;
 }
 
-.box a{
-    text-decoration: none;
+.latest-card {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.313rem 2.125rem;
 }
-.l-button{
-    font-size: 10px;
-    padding: 6px 5px 6px 5px;
-    width: 5rem;
-    height: 2rem;
+
+.latest-card .l-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--light-color);
+  box-shadow: 0.625rem 2.5rem 3.125rem rgba(229, 233, 246, 0.4)
 }
+.l-box img{
+  width: 100%;
+  margin-bottom: 1.313rem;
+}
+.box-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.box-content a img {
+  width: auto;
+  margin-bottom: 0.313rem;
+}
+
+.l-box h3 {
+  font-weight: 700;
+    font-size: 1.313rem;
+    line-height: 2rem;
+    margin-bottom: 0.75rem;
+}
+.l-box p {
+  color: var(--sec-color);
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.563rem;
+}
+.l-box img {
+  object-fit: fill;
+  border-radius: 20px 20px 0 0;
+}
+
+.l-box a {
+  text-decoration: none;
+  color: var(--prim-color);
+}
+.article .dots2{
+  position: absolute;
+  right: 1rem;
+  top:491rem;
+  z-index: -2;
+}
+
 /* for tab responsive */
-@media only screen  and (min-width: 481px)and (max-width: 768px){
-    .latest-card{
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .l-button{
-        font-size: 17px;
-        padding: 6px 5px 6px 5px;
-        width: 9rem;
-        height: 3rem;
-      }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .latest-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article .bgFrame{
+    right: 1.25rem;
+    top: 334.5rem;
+  }
+  .article .dots{
+    left: 1rem;
+    top: 317rem;
+  }
+  .article .dots2{
+    right: 1rem;
+    top: 378rem;
+  }
 }
 /* for desktop responsive */
-@media only screen and (min-width: 769px){
-    .latest-card{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .l-button{
-        font-size: 17px;
-        padding: 6px 5px 6px 5px;
-        width: 9rem;
-        height: 3rem;
-      }
-      h2{
-        font-size: 36px;
-        font-weight: 700;
-        line-height: 56px;
-    }
+@media only screen and (min-width: 769px) {
+  .articles {
+    margin-bottom: 12.625rem;
+  }
+  .title-wrapper {
+    margin-bottom: 3.55rem;
+  }
+  .article .bgFrame {
+    right: 0.275rem;
+    top: 222.5rem;
+  }
+  .bgFrame img{
+    width: 50%;
+  }
+  .article .dots{
+    left: 2rem;
+    top: 229rem;
+  }
+  .article .dots2{
+    right: 2rem;
+    top: 272rem;
+  }
+  .latest-card {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 4.5rem;
+  }
+  .l-box{
+    width: 100%;
+  }
+  .l-box img {
+    margin-bottom: 1.33rem;
+  }
+  .box-content{
+    padding: 0.2188rem 2.188rem 2.188rem;
+  }
+  .box-content h3{
+    font-weight: 700;
+    font-size: 1.313rem;
+    line-height: 2rem;
+    margin-bottom: 0.75rem;
+  }
+  .box-content p{
+    color: var(--sec-color);
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 1.563rem;
+  }
 }
