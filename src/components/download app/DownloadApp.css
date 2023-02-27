@@ -2,7 +2,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .dots-down {
@@ -39,14 +39,12 @@
 @media only screen and (min-width: 769px) {
   .download {
     flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 16.375rem;
     position: relative;
   }
 
   .dots-down {
-    top: -15.125rem;
-    right: -10.125rem;
+    top: -4.125rem;
+    right: 1.875rem;
   }
 
 }

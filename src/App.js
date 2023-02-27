@@ -4,7 +4,7 @@ import Navbar from "./components/header/Navbar/Navbar";
 import Services from "./components/services/Services";
 import HealthCare from "./components/healthcare providers/HealthCare";
 import DownloadApp from "./components/download app/DownloadApp";
-import Testimonilas from "./components/testimonials/Testimonilas";
+import Testimonilas from "./components/testimonilas/Testimonilas";
 import Footer from "./components/footer/Footer";
 import LatestArticle from "./components/latest article/LatestArticle";
 
@@ -16,7 +16,7 @@ function App() {
       <Services />
       <HealthCare />
       <DownloadApp />
-      {/* <Testimonilas /> */}
+      <Testimonilas />
       <LatestArticle />
       <Footer />
     </div>

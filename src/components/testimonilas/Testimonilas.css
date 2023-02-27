@@ -1,0 +1,85 @@
+.customers {
+  max-width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+.customers-data {
+	width: 100%;
+	border-radius: 1.5rem;
+	background: linear-gradient(208.18deg, #67c3f3 9.05%, #5a98f2 76.74%);
+	flex-direction: column;
+	background-color: var(--prim-color);
+	justify-content: center;
+	color: var(--light-color);
+	position: relative;
+	padding: 4rem;
+	gap: 2.25rem;
+}
+.title {
+	margin-bottom: 3.05rem;
+}
+.title::before {
+	background-color: var(--light-color);
+}
+.cust-info {
+	gap: 2.063rem;
+}
+.cust-img {
+	width: 8.313rem;
+	height: 8.313rem;
+}
+.cust-img img {
+	width: 100%;
+	height: 100%;
+	border: 0.25rem solid var(--light-color);
+	border-radius: 50%;
+	object-fit: fill;
+}
+.cust-review {
+	width: 100%;
+}
+.card-header p{
+	width: 26.25rem;
+	font-weight: 400;
+	font-size: 1.188rem;
+	line-height: 1.875rem;
+}
+
+.rev-nav {
+	cursor: pointer;
+}
+.dots.top {
+	position: absolute;
+	top: -0.875rem;
+	right: -2.875rem;
+}
+.dots.bot {
+	position: absolute;
+	left: -3.125rem;
+	bottom: 6.25rem;
+	z-index: -1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.controls button {
+  width: 40px;
+  height: 40px;
+  border: 0;
+  color:var(--dark-color);
+  cursor: pointer;
+}
+
+.controls button:nth-child(1) {
+  margin-right: 2rem;
+}

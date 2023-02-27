@@ -4,21 +4,25 @@
   justify-content: center;
   margin-bottom: 2rem;
 }
+
 .article .bgFrame {
   position: absolute;
   transform: rotate(205deg);
   right: 7.25rem;
   top: 410.5rem;
 }
-.article .dots{
+
+.article .dots {
   position: absolute;
   left: 2rem;
-  top:440rem;
+  top: 440rem;
   z-index: -2;
 }
-.bgFrame img{
+
+.bgFrame img {
   width: 100%;
 }
+
 h2 {
   font-size: 27px;
   font-weight: 500;
@@ -40,15 +44,18 @@ h2 {
   background-color: var(--light-color);
   box-shadow: 0.625rem 2.5rem 3.125rem rgba(229, 233, 246, 0.4)
 }
-.l-box img{
+
+.l-box img {
   width: 100%;
   margin-bottom: 1.313rem;
 }
+
 .box-content {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
+
 .box-content a img {
   width: auto;
   margin-bottom: 0.313rem;
@@ -56,10 +63,11 @@ h2 {
 
 .l-box h3 {
   font-weight: 700;
-    font-size: 1.313rem;
-    line-height: 2rem;
-    margin-bottom: 0.75rem;
+  font-size: 1.313rem;
+  line-height: 2rem;
+  margin-bottom: 0.75rem;
 }
+
 .l-box p {
   color: var(--sec-color);
   font-weight: 300;
@@ -67,7 +75,8 @@ h2 {
   line-height: 1.75rem;
   margin-bottom: 1.563rem;
 }
-.l-box img {
+
+img {
   object-fit: fill;
   border-radius: 20px 20px 0 0;
 }
@@ -76,10 +85,11 @@ h2 {
   text-decoration: none;
   color: var(--prim-color);
 }
-.article .dots2{
+
+.article .dots2 {
   position: absolute;
   right: 1rem;
-  top:491rem;
+  top: 491rem;
   z-index: -2;
 }
 
@@ -88,62 +98,77 @@ h2 {
   .latest-card {
     grid-template-columns: repeat(2, 1fr);
   }
-  .article .bgFrame{
-    right: 1.25rem;
-    top: 334.5rem;
+
+  .article .bgFrame {
+    right: 5.25rem;
+    top: 380.5rem;
   }
-  .article .dots{
+
+  .article .dots {
     left: 1rem;
-    top: 317rem;
+    top: 372rem;
   }
-  .article .dots2{
+
+  .article .dots2 {
     right: 1rem;
-    top: 378rem;
+    top: 437rem;
   }
 }
+
 /* for desktop responsive */
 @media only screen and (min-width: 769px) {
   .articles {
     margin-bottom: 12.625rem;
   }
+
   .title-wrapper {
     margin-bottom: 3.55rem;
   }
+
   .article .bgFrame {
-    right: 0.275rem;
-    top: 222.5rem;
+    right: 2.275rem;
+    top: 216.5rem;
   }
-  .bgFrame img{
+
+  .bgFrame img {
     width: 50%;
   }
-  .article .dots{
+
+  .article .dots {
     left: 2rem;
-    top: 229rem;
+    top: 267rem;
   }
-  .article .dots2{
+
+  .article .dots2 {
     right: 2rem;
-    top: 272rem;
+    top: 271rem;
   }
+
   .latest-card {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 4.5rem;
   }
-  .l-box{
+
+  .l-box {
     width: 100%;
   }
+
   .l-box img {
     margin-bottom: 1.33rem;
   }
-  .box-content{
+
+  .box-content {
     padding: 0.2188rem 2.188rem 2.188rem;
   }
-  .box-content h3{
+
+  .box-content h3 {
     font-weight: 700;
     font-size: 1.313rem;
     line-height: 2rem;
     margin-bottom: 0.75rem;
   }
-  .box-content p{
+
+  .box-content p {
     color: var(--sec-color);
     font-weight: 300;
     font-size: 1rem;
