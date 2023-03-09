@@ -24,13 +24,7 @@
 .cust-info {
 	gap: 2.063rem;
 }
-.cust-img {
-	width: 8.313rem;
-	height: 8.313rem;
-}
 .cust-img img {
-	width: 100%;
-	height: 100%;
 	border: 0.25rem solid var(--light-color);
 	border-radius: 50%;
 	object-fit: fill;
@@ -39,7 +33,7 @@
 	width: 100%;
 }
 .card-header p{
-	width: 26.25rem;
+	/* width: 26.25rem; */
 	font-weight: 400;
 	font-size: 1.188rem;
 	line-height: 1.875rem;
@@ -73,13 +67,13 @@
 }
 
 .controls button {
-  width: 40px;
-  height: 40px;
+  width: 60px;
+  height: 60px;
   border: 0;
   color:var(--dark-color);
   cursor: pointer;
 }
 
 .controls button:nth-child(1) {
-  margin-right: 2rem;
+  margin-right: 10rem;
 }

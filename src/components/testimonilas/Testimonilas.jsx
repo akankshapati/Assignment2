@@ -15,6 +15,7 @@ const Testimonilas = () => {
   const sliderSettings = {
     dots: true,
     arrows:false,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,

@@ -13,8 +13,8 @@ const Card = (props) => {
                     <h2>{props.title}</h2>
                     <span>{props.position}</span>
                 </div>
+                <p className='cust-review'>{props.review}</p>
             </div>
-            <p className='cust-review'>{props.review}</p>
         </>
     )
 }
