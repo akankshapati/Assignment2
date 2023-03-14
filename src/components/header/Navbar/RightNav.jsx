@@ -1,54 +1,59 @@
-import React from 'react';
-import styled from 'styled-components'
-
+import React from "react";
+import styled from "styled-components";
 
 const Ul = styled.ul`
-display: flex;
-flex-flow: row nowrap;
-list-style:none;
-flex: 1;
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  gap:2.62rem;
 
->li:hover{
+  > li:hover {
     cursor: pointer;
-    color: #ff5133;
+  }
+
+  li {
+      padding: 18px 10px;
+  }
+  
+  a {
+	text-decoration: none;
+	color: var(--sec-color);
+	font-weight: 400;
+	font-size: 1.125rem;
+	line-height: 1.412rem;
+}
+a:hover {
+	color: var(--darkr-color);
+	font-weight: 700;
 }
 
-li{
-    padding: 18px 10px;
-}
-
-
-@media (max-width: 768px){
+  @media (max-width: 768px) {
     flex-flow: column nowrap;
-    background-color: #F3F7FF;
+    background-color: #f3f7ff;
     position: fixed;
-    transform: ${({ open }) => open ?  'translateX(0)' : 'translateX(100%)'};
+    transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
     top: 0;
     right: 0;
     height: 100vh;
-    width:300px;
+    width: 300px;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-
-    li{
-        color:#000000;
-    }
-}
-
+  
+  }
 `;
 
 const RightNav = ({ open }) => {
   return (
     <div>
-       <Ul open={open}>
-              <li>Home</li>
-              <li>Find a Doctor</li>
-              <li>Apps</li>
-              <li>Testimonials</li>
-              <li>About us</li>
-       </Ul>
+      <Ul open={open}>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Find A Doctor</a></li>
+        <li><a href="#">App</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About Us</a></li>
+      </Ul>
     </div>
-  )
-}
+  );
+};
 
-export default RightNav
+export default RightNav;

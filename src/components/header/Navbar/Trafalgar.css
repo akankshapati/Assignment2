@@ -1,43 +1,63 @@
 .trafalgar {
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: start;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .circle {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    background-color: #458FF6;
-    border-radius: 50%;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: #458ff6;
+  border-radius: 50%;
 }
 
 .text {
-    margin: auto;
-    color: #ffffff;
+  font-size: 1rem;
+  margin: auto;
+  color: #ffffff;
 }
 
 .n-name {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 10px;
+  color: #233348;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 10px;
 }
 
 /* for tab responsive */
-@media only screen and (min-width: 481px)and (max-width: 768px) {
-    .n-name {
-        font-size: 1.5rem;
-        font-weight: 500;
-        line-height: 20px;
-    }
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .text{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .n-name {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 20px;
+  }
+
 }
 
 /* for desktop responsive */
 @media only screen and (min-width: 769px) {
-    .n-name {
-        font-weight: 700;
-        font-size: 2rem;
-        line-height: 30px;
-    }
+  .text{
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+  .circle {
+    width: 41px;
+    height: 41px;
+  }
+  .n-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
 }

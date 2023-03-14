@@ -1,28 +1,31 @@
-import React from 'react'
-import Pic3 from '../images/Pic3.png'
-import './DownloadApp.css'
+import React from "react";
+import Pic3 from "../images/Pic3.png";
+import "./DownloadApp.css";
+import element from "../images/element.png"
+import DownArrow from "../images/DownArrow.png"
 
 const DownloadApp = () => {
   return (
-    <div className="DownloadApp">
-      <div className="d-left">
-        <div className="d-name">
-          <span>Download our</span>
-          <span>mobile app</span>
-          <hr />
-          <span>Trafalgar provides progressive, and affordable healthcare,
-            accessible on mobile and online for everyone. To us, it’s not
-            just work. We take pride in the solutions we deliver
-          </span>
-        </div>
-        <button className="button d-button">Download</button>
+    <div className="container flex download">
+      <div className="dots-down">
+        <img src={element} alt="Bg-Dots" />
       </div>
-
-      <div className="d-right">
-        <img src={Pic3} alt="Pic3" />
+      <div className="section-info">
+        <h1 className="section-title underlined">Download our mobile apps</h1>
+        <p className="section-desc"
+        >Our dedicated patient engagement app and web portal allow you to
+          access information instantaneously (no tedeous form, long calls, or
+          administrative hassle) and securely
+        </p>
+        <button className="sec-btn btn"
+        >Download <img src={DownArrow} alt="DownArrow"
+          /></button>
+      </div>
+      <div className="hero-img">
+        <img src={Pic3} alt="Pic3 not visble"  />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DownloadApp
+export default DownloadApp;

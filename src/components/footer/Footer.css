@@ -1,47 +1,47 @@
-.footer{
-    width: 100%;
-    background-image: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
-    color: #ffffff;
+.footer {
+  width: 100%;
+  background-image: linear-gradient(183.41deg, #67c3f3 -8.57%, #5a98f2 82.96%);
+  color: #ffffff;
 }
 
 .single-footer-widget {
-    padding: 60px 0 30px;
-    text-align: start;
+  padding: 60px 0 30px;
+  text-align: start;
 }
 .widget-title {
-    font-size: 15px;
-    font-weight: 500;
-    margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 .widget-title h2 {
-    line-height: 1;
-    font-size: 20px;
-    color: #fff!important;
-    font-weight: 600;
+  line-height: 1;
+  font-size: 20px;
+  color: #fff !important;
+  font-weight: 600;
 }
 .footer-copy-right {
-    padding: 20px 8px;
-    color: #ffffff;
+  padding: 20px 8px;
+  color: #ffffff;
 }
 .footer-link {
-    display: block;
-    line-height: 34px;
-    color: #fff!important;
-    font-weight: 400;
+  display: block;
+  line-height: 34px;
+  color: #fff !important;
+  font-weight: 400;
 }
 
 .footer-link:hover {
-    color: #fc5185 !important; 
+  color: #fc5185 !important;
 }
 /* for mobile responsive */
-@media only screen and (max-width: 426px){
-    .single-footer-widget {
-        padding: 45px 0 20px;
-    }
+@media only screen and (max-width: 426px) {
+  .single-footer-widget {
+    padding: 45px 0 20px;
+  }
 }
 
-@media only screen and (max-width: 321px){
-    .footer-copy-right {
-        padding: 20px 8px;
-    }
+@media only screen and (max-width: 321px) {
+  .footer-copy-right {
+    padding: 20px 8px;
+  }
 }

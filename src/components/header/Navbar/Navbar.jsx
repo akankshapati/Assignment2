@@ -1,24 +1,21 @@
-import React from 'react'
-import Burger from './Burger'
-import './Navbar.css'
-import Trafalgar from './Trafalgar'
+import React from "react";
+import Burger from "./Burger";
+import "./Navbar.css";
+import Trafalgar from "./Trafalgar";
 
 const Navbar = () => {
   return (
-    
-  <div className="navbar">
-    
-    <div className="n-left">
-         <Trafalgar />
+    <div className="container flex navbar">
+      <div className="logo">
+        <Trafalgar />
+      </div>
+      <div className="navlist flex">
+        <div className="n-list">
+          <Burger />
+        </div>
+      </div>
     </div>
-    <div className="n-right">
-          <div className="n-list">
-           <Burger />
-          </div>
-    </div>
+  );
+};
 
-  </div>
-  )
-}
-
-export default Navbar
+export default Navbar;
